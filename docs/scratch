@@ -1,0 +1,39 @@
+// mongo Date
+
+db.products.update(
+  { _id: 1 },
+  {
+    $set: { item: "apple" },
+    $setOnInsert: { dateAdded: new Date() }
+  },
+  { upsert: true }
+)
+
+// Bootstrap Forms
+
+<form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Example label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Another label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+  </div>
+</form>
+
+//  Bootstrap commands
+
+Code	Description for shortcut code
+!bscdn	Creates an Bootstrap 4 starter template. With Jquery, popper.js and Font-Awesome 5
+!bsnav	Default Navigation for Bootstrap 4
+!bsnavc	Class to Align Navigation Center
+!bsnavr	Class to Align Navigation Right
+!bsf	Bootstrap Form
+!bsfc	Bootstrap Form Control
+!bscard	Bootstrap 4 Card
+!bscardhf	Bootstrap 4 Card with Header & Footer
+!bscardc	Bootstrap 4 Card Align Center
+!bsls	Bootstrap List
+!bslslb	Bootstrap List with Links and Buttons
+
