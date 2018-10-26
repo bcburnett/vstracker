@@ -13,8 +13,8 @@ const del = require('./routes/del')
 const edit = require('./routes/edit')
 
 const app = express();
-const url = 'mongodb://localhost:27017/todoapp'
-// const url = 'mongodb://bcburnett:peachpie01@ds033086.mlab.com:33086/todoapp'
+//const url = 'mongodb://localhost:27017/todoapp'
+const url = 'mongodb://bcburnett:peachpie01@ds033086.mlab.com:33086/todoapp'
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
