@@ -1,0 +1,19 @@
+<% todos.forEach(function(todo){ %>
+  <div class="card bg-warning" style="width: 25rem;">
+    <div class="card-body">
+      <span>Date: <%= todo.date %><br/>
+      BP: <%= todo.bp %><br/>
+  Weight: <%= todo.weight %><br/>
+      Pulse: <%= todo.pulse %><br/>                
+      Comments:<br/></span>
+  <textarea  id="" cols="25" rows="3" class="bg-info form-control"><%= todo.comment %></textarea>
+      <a data-id="<%= todo._id %>" 
+        href="#" 
+        class="delete-todo card-link">
+        Delete
+      </a>
+      <a href="/edit/<%= todo._id %>" class="card-link float-right">Edit</a>
+    </div>
+  </div>
+  <br>
+<% }) %>
